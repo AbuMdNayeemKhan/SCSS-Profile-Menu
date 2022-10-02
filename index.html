@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Profile Menu</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="assets/img/logo.png" alt="Brand Logo" class="brand-logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="assets/img/user.png" alt="User Pic" class="user-pic" onclick="toggleMenub()">
+            <div class="sub-menu-wrap">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="assets/img/user.png">
+                        <h2>James Aldrino</h2>
+                    </div>
+                    <hr>
 
+                    <a href="#" class="sub-menu-link">
+                        <img src="assets/img/profile.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="assets/img/setting.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="assets/img/help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="assets/img/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

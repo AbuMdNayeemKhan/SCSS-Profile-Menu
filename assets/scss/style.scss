@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECEAFF;
+    nav{
+        background-color: #1a1a1a;
+        width: 100vw;
+        padding: 10px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        ul{
+            width: 100%;
+            text-align: right;
+            li{
+                display: inline-block;
+                list-style-type: none;
+                margin: 10px 20px;
+                a{
+                    color: #FFFFFF;
+                    text-decoration: none;;
+                }
+            }
+        }
+        .sub-menu-wrap{
+            position: absolute;
+            top: 100%;
+            right: 10%;
+            width: 320px;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.5s;
+            &.open-menu{
+                max-height: 500px;
+            }
+            .sub-menu{
+                background-color: #FFFFFF;
+                padding: 20px;
+                margin: 10px;
+                hr{
+                    border: 0;
+                    height: 1px;
+                    width: 100%;
+                    background-color: #CCC;
+                    margin: 15px 0 10px;
+                }
+                .user-info{
+                    display: flex;
+                    align-items: center;
+                    h2{
+                        font-weight: 500;
+                    }
+                    img{
+                        width: 60px;
+                        border-radius: 50%;
+                        margin-right: 15px;
+                    }
+                }
+                .sub-menu-link{
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #525252;
+                    margin: 12px 0;
+                    p{
+                        width: 100%;
+                        transition: 500ms;
+                    }
+                    &:hover p{
+                        font-weight: 600;
+                    }
+                    img{
+                        width: 40px;
+                        background-color: #E5E5E5;
+                        border-radius: 50%;
+                        padding: 8px;
+                        margin: 15px;
+                    }
+                    span{
+                        font-size: 22px;
+                        transition: 500ms;
+                    }
+                    &:hover span{
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+        .brand-logo{
+            width: 120px;
+        }
+        .user-pic{
+            width: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+    }
+}
